@@ -8,13 +8,15 @@
 
 .sect1{
     margin-top: 100px;
-    font-size: 80px;
+    font-size: 40px;
     display: flex;
     justify-content: center;
+    
+    font-family: "Fjalla One", sans-serif; 
 }
 
 .conten1 {
-    margin-top: 10px;
+    margin-top: 2px;
     display: flex;  
 }
 .vent1{
