@@ -71,16 +71,31 @@
   
   .welcome-text {
       opacity: 1; /* Mostrar texto de bienvenida desde el principio */
-  }
+    margin-top: 25px;
+    }
   
   .container:hover .cart {
       left: calc(50% - 30px);
   }
   
+  
+  .padreCategorias {
+    display: flex;
+    flex-wrap: wrap;
+    gap: 10px;
+    justify-content: center;
+}
 
+.padreCategorias img {
+    width: calc(33.33% - 10px);
+    width: 400px;
+}
 
-
-
+@media (max-width: 600px) {
+    .padreCategorias img {
+        width: calc(50% - 10px);
+    }
+}
 
 
 
