@@ -4,35 +4,67 @@
    
 }
 
-
+body {
+    font-family: Arial, sans-serif;
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+  }
 
 .sect1{
     margin-top: 100px;
     font-size: 40px;
     display: flex;
     justify-content: center;
-    
+    align-items: center;
     font-family: "Fjalla One", sans-serif; 
 }
 
 .conten1 {
-    margin-top: 2px;
-    display: flex;  
-    max-width: 1200px;
+    display: flex;
+  flex-wrap: wrap;
+  justify-content: center;
+  padding: 20px;
 }
+
+.vent1, .vent2, .vent3, .vent4 {
+    flex: 1 1 250px;
+    margin: 10px;
+    border: 2px solid #ccc;
+    padding: 10px;
+    background-color: #fff;
+    text-align: center;}
+
+
+
+
+
+
+
 .vent1{
     display: flex;
-    margin: 5px 
+    margin: 5px 5px
 }
 .vent2{
     display: flex;
-    margin: 5px 
+    margin: 5px 5px
 }
 .vent3{
     display: flex;
-    margin: 5px 
+    margin: 5px 5px
 }
 .vent4{
     display: flex;
-    margin: 5px 
+    margin: 5px 5px
 }
+@media (max-width: 768px) {
+    .conten1 {
+      flex-direction: column;
+      align-items: center;
+    }
+  
+    .vent1, .vent2, .vent3, .vent4 {
+      flex: 1 1 100%;
+      margin: 10px 0;
+    }
+  }
